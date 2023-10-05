@@ -1,2 +1,2 @@
-export { default as ProtectedRoutes } from "./ProtectedRoutes";
+export { default as ProtectedRoute } from "./ProtectedRoute";
 export { default as PublicRoute } from "./PublicRoute";

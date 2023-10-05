@@ -8,7 +8,7 @@ import {
 } from "./CONSTANTS";
 
 
-import {ProtectedRoutes, PublicRoute} from "@/components"
+import {ProtectedRoute, PublicRoute} from "@/components"
 
 
 const RouterConfig = () => {
@@ -25,7 +25,7 @@ const RouterConfig = () => {
           {/* <Route path={FORGOT_PASSWORD} element={<ForgotPassword />} /> */}
         </Route>
 
-        <Route path="/" element={<ProtectedRoutes />}>
+        <Route path="/" element={<ProtectedRoute />}>
           {/* Protected routes should be placed in here */}
         </Route>
 
