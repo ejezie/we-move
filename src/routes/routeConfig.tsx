@@ -1,13 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 // import { Home } from "@/pages";
 import {
-  HOME,
+  // HOME,
   // SIGNUP,
   // FORGOT_PASSWORD,
   // LOGIN
-} from "@/routes/CONSTANTS";
+} from "./CONSTANTS";
 
-import { ProtectedRoutes, PublicRoute } from "@/components";
+
+import {ProtectedRoutes, PublicRoute} from "@/components"
+
 
 const RouterConfig = () => {
   return (
