@@ -1,8 +1,28 @@
 import React, { useState } from "react";
 import "./Input.scss";
-import { info_circle, eye, calendar, eyeclose } from "assets/images";
+import { eye, info_circle, calendar, eyeclose } from "@/assets";
+import { FieldInputProps, FieldMetaState } from "react-final-form";
 // import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
+
+interface InputProp {
+  type: string;
+  label: string;
+  tooltip: string;
+  input: FieldInputProps<string>;
+  meta: FieldMetaState<string | boolean>;
+  password: string;
+  select: string;
+  selectDefault: string;
+  options: string;
+  textArea: string;
+  placeholder: string;
+  number: string;
+  date: string;
+  className: string;
+  disabled: boolean;
+  required: boolean;
+}
 
 const Input = ({
   type = "text",
@@ -20,7 +40,7 @@ const Input = ({
   className,
   disabled,
   required = true,
-}) => {
+}: InputProp) => {
   const [passwordType, setPasswordType] = useState("password");
   // const parseDate = (value) => {
   // console.log(value.target);
@@ -56,7 +76,7 @@ const Input = ({
         {select ? (
           <select
             className="input_main"
-            onChange={input.value}
+            // onChange={input.value}
             {...input}
             style={{ width: "100%" }}
           >
@@ -89,19 +109,20 @@ const Input = ({
           //   dateFormat="dd/MM/yyyy"
           // />
 
-          <DatePicker
-            className="datepicker"
-            selected={input.value ? new Date(input.value) : null}
-            onChange={(date) =>
-              input.onChange(date?.toISOString()?.split("T")[0])
-            }
-            dateFormat="yyyy-MM-dd"
-          />
+          // <DatePicker
+          //   className="datepicker"
+          //   selected={input.value ? new Date(input.value) : null}
+          //   onChange={(date) =>
+          //     input.onChange(date?.toISOString()?.split("T")[0])
+          //   }
+          //   dateFormat="yyyy-MM-dd"
+          // />
+          <div />
         ) : (
           <input
             className="input_main"
             {...input}
-            style={{ width: (!date || !password) && "100%" }}
+            style={{ width: !date || !password ? "100%" : "" }}
             type={password ? passwordType : type}
             placeholder={placeholder}
             disabled={disabled}
