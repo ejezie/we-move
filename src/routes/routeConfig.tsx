@@ -1,15 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-// import { Home } from "@/pages";
+import { LoginPage } from "@/pages";
 import {
   // HOME,
   // SIGNUP,
   // FORGOT_PASSWORD,
-  // LOGIN
+  LOGIN,
 } from "./CONSTANTS";
 
-
-import {ProtectedRoute, PublicRoute} from "@/components"
-
+import { ProtectedRoute, PublicRoute } from "@/components";
 
 const RouterConfig = () => {
   return (
@@ -21,7 +19,7 @@ const RouterConfig = () => {
         <Route path="/" element={<PublicRoute />}>
           {/* Auth pages */}
           {/* <Route path={SIGNUP} element={<Signup />} /> */}
-          {/* <Route path={LOGIN} element={<Login />} /> */}
+          <Route path={LOGIN} element={<LoginPage />} />
           {/* <Route path={FORGOT_PASSWORD} element={<ForgotPassword />} /> */}
         </Route>
 

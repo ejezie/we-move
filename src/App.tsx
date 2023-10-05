@@ -1,10 +1,16 @@
 import RouterConfig from "./routes/routeConfig";
-import "./App.css";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <RouterConfig />
+      <Provider store={store}>
+        <BrowserRouter>
+          <RouterConfig />
+        </BrowserRouter>
+      </Provider>
     </>
   );
 }

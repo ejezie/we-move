@@ -1,9 +1,12 @@
-import React from 'react'
+import { LoginBlock } from "@/blocks";
 
 const LoginPage = () => {
   return (
-    <div>LoginPage</div>
-  )
-}
+    <>
+      <LoginBlock />
+      <h1>Hello</h1>
+    </>
+  );
+};
 
-export default LoginPage
+export default LoginPage;
