@@ -4,7 +4,6 @@ const LoginPage = () => {
   return (
     <>
       <LoginBlock />
-      <h1>Hello</h1>
     </>
   );
 };

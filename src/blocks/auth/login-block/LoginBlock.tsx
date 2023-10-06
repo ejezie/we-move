@@ -1,9 +1,9 @@
 import { Login } from "@/components";
-import React from "react";
+import "./LoginBlock.scss";
 
 const LoginBlock = () => {
   return (
-    <div>
+    <div className="login_block center">
       <Login />
     </div>
   );
