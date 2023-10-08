@@ -1,7 +1,6 @@
 import "./LoginForm.scss";
-import { Button, Input, SideBarItem } from "@/components";
+import { Button, Input } from "@/components";
 import { Form, Field } from "react-final-form";
-import { AiFillDashboard } from "react-icons/ai";
 // import { Link } from "react-router-dom";
 
 const LoginForm = () => {
@@ -61,7 +60,6 @@ const LoginForm = () => {
       <div className="center footer_terms">
         Copyright © We move 2023. All Rights Reserved.
       </div>
-      <SideBarItem icon={<AiFillDashboard/>} title="Title" link="/home"/>
     </div>
   );
 };

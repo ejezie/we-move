@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import { LoginPage, RegisterPage } from "@/pages";
+import { DashboardPage, LoginPage, RegisterPage } from "@/pages";
 import {
   // HOME,
   REGISTER,
   // FORGOT_PASSWORD,
   LOGIN,
+  DASHBOARD,
 } from "./CONSTANTS";
 
 import { ProtectedRoute, PublicRoute } from "@/components";
@@ -15,6 +16,9 @@ const RouterConfig = () => {
       <Routes>
         {/* Public routes should be placed in here */}
         {/* <Route path={HOME} element={<Home />} /> */}
+          <Route path={DASHBOARD} element={<DashboardPage />} />
+
+        
 
         <Route path="/" element={<PublicRoute />}>
           {/* Auth pages */}
@@ -24,6 +28,7 @@ const RouterConfig = () => {
         </Route>
 
         <Route path="/" element={<ProtectedRoute />}>
+          <Route path={DASHBOARD} element={<DashboardPage />} />
           {/* Protected routes should be placed in here */}
         </Route>
 
