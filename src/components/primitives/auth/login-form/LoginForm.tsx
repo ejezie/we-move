@@ -1,5 +1,5 @@
-import Input from "@/components/widgets/Input/Input";
-import Button from "@/components/widgets/button/Button";
+import "./LoginForm.scss";
+import { Button, Input } from "@/components";
 import { Form, Field } from "react-final-form";
 import { Link } from "react-router-dom";
 

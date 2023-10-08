@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import { LoginPage } from "@/pages";
+import { LoginPage, RegisterPage } from "@/pages";
 import {
   // HOME,
-  // SIGNUP,
+  REGISTER,
   // FORGOT_PASSWORD,
   LOGIN,
 } from "./CONSTANTS";
@@ -18,7 +18,7 @@ const RouterConfig = () => {
 
         <Route path="/" element={<PublicRoute />}>
           {/* Auth pages */}
-          {/* <Route path={SIGNUP} element={<Signup />} /> */}
+          <Route path={REGISTER} element={<RegisterPage />} />
           <Route path={LOGIN} element={<LoginPage />} />
           {/* <Route path={FORGOT_PASSWORD} element={<ForgotPassword />} /> */}
         </Route>
