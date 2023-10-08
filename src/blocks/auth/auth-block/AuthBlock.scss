@@ -27,6 +27,7 @@
     background-color: rgba(255, 255, 255, 0.95);
     @include var.mq("md") {
       width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
     }
   }
 }

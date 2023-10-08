@@ -14,8 +14,8 @@ const LoginForm = () => {
         // validate={validate}
         render={({ handleSubmit, valid }) => (
           <form onSubmit={handleSubmit} className="form">
-            <div className="auth_form_title">Welcome Back</div>
-            <div className="auth_form_sub_title">Log into your account</div>
+            <div className="auth_form_title">Welcome Back </div>
+            {/* <div className="auth_form_sub_title">Log into your account</div> */}
             <div className="field">
               <Field
                 name="email"
@@ -45,7 +45,7 @@ const LoginForm = () => {
               // style={{ marginBottom: "52px" }}
             />
             {/* </Link> */}
-            <div className="auth_form_sub_title center">
+            {/* <div className="auth_form_sub_title center">
               Don’t have an account yet?{" "}
               <Link
                 to={"/register-company"}
@@ -53,7 +53,7 @@ const LoginForm = () => {
               >
                 Sign Up
               </Link>
-            </div>
+            </div> */}
           </form>
         )}
       />

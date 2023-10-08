@@ -9,15 +9,15 @@
     rgba(255, 255, 255, 0.26) 5.84%,
     rgba(255, 255, 255, 0.5) 70.7%
   );
-    backdrop-filter: blur(100px);
+//   backdrop-filter: blur(100px);
   padding: 50px;
+  height: 40vh;
 
   .auth_left_side_title {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 46px;
     color: var.$green;
     width: 100%;
-    padding-bottom: 100px;
 
     @media (max-width: 991px) {
       font-size: 25px;
@@ -26,6 +26,7 @@
 
   .auth_left_side_title_bold {
     font-weight: 700;
+    font-size: 18px;
   }
 
   .auth_left_side_text_wrap {
