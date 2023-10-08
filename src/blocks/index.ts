@@ -1,1 +1,1 @@
-export { default as LoginBlock } from "./auth/login-block/LoginBlock";
+export { default as AuthBlock } from "./auth/auth-block/AuthBlock";

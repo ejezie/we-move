@@ -1,9 +1,10 @@
-import { LoginBlock } from "@/blocks";
+import { AuthBlock } from "@/blocks";
+import { LoginForm } from "@/components";
 
 const LoginPage = () => {
   return (
     <>
-      <LoginBlock />
+      <AuthBlock Form={LoginForm} />
     </>
   );
 };
